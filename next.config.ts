@@ -7,15 +7,17 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
+        protocol: "https",
         hostname: "avatar.vercel.sh",
+        pathname: "/**"
       },
       {
         protocol: "https",
-        //https://nextjs.org/docs/messages/next-image-unconfigured-host
-        hostname: "*.public.blob.vercel-storage.com",
-      },
-    ],
-  },
+        hostname: "**.public.blob.vercel-storage.com",
+        pathname: "/**"
+      }
+    ]
+  }
 };
 
 export default nextConfig;
