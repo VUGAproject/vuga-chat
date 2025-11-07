@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* keep it simple for now so the build works */
-html, body { height: 100%; }
-
-/* You can add normal CSS below later */
+html,
+body {
+    height: 100%;
+}
